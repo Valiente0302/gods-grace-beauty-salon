@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>God’s Grace Beauty Salon | Luxury Beauty Services in Ibadan</title>
+  <meta name="description" content="God’s Grace Beauty Salon – Professional braiding, wig installation, manicure, pedicure, and premium beauty services in Ibadan. Call or WhatsApp to book now." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Social Links Styling */
+    .contact-details a {
+      color: var(--gold);
+      font-weight: 500;
+    }
+
+    .contact-details a:hover {
+      text-decoration: underline;
+    }
+
+    /* Premium Animated Header */
+    .brand-title {
+      font-size: 46px;
+      color: var(--gold);
+      margin-bottom: 8px;
+      animation: fadeSlide 1.5s ease forwards;
+    }
+
+    .hero-sub {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: var(--cream);
+      margin-bottom: 18px;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+      animation-delay: 0.8s;
+    }
+
+    @keyframes fadeSlide {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    :root {
+      --black: #0b0b0b;
+      --gold: #c9a24d;
+      --cream: #f6f2eb;
+      --beige: #e8ddcc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--black);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Utility */
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 30px;
+      font-weight: 500;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--black);
+    }
+
+    .btn-outline {
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      background: transparent;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 0.5px;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)), url('https://via.placeholder.com/1200x800') center/cover no-repeat;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+      color: var(--cream);
+    }
+
+    .hero p {
+      font-size: 16px;
+      margin-bottom: 30px;
+      color: #ddd;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    /* Services */
+    .services {
+      background: var(--cream);
+      color: var(--black);
+    }
+
+    .services h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--black);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Why Choose Us */
+    .why {
+      background: var(--black);
+    }
+
+    .why h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--gold);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+
+    .why-card {
+      background: #111;
+      border-radius: 18px;
+      padding: 30px;
+      text-align: center;
+      border: 1px solid rgba(201,162,77,0.25);
+    }
+
+    .why-card h3 {
+      margin-bottom: 10px;
+      color: var(--cream);
+    }
+
+    .why-card p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    /* Gallery */
+    .gallery {
+      background: var(--beige);
+      color: var(--black);
+    }
+
+    .gallery h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 14px;
+    }
+
+    /* Contact */
+    .contact {
+      background: var(--black);
+    }
+
+    .contact h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: var(--gold);
+    }
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .contact-details {
+      background: #111;
+      padding: 30px;
+      border-radius: 18px;
+    }
+
+    .contact-details p {
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    .map {
+      background: #222;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+      background: #000;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    /* Sticky CTA */
+    .sticky-cta {
+      position: fixed;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 1000;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .contact-box {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="brand-title">God’s Grace Beauty Salon</h1>
+        <h2 class="hero-sub">Luxury Beauty, Perfectly Done</h2>
+        <p>Experience refined beauty services delivered with precision, elegance, and exceptional care. From flawless braids to luxury nail treatments, we bring out your best.</p>
+        <div class="hero-buttons">
+          <!-- Primary WhatsApp Booking -->
+          <!-- WhatsApp-only Booking -->
+          <a href="tel:07087083857" class="btn btn-primary">Call Now</a>
+          <a href="https://wa.me/2347087083857" class="btn btn-outline">WhatsApp Us</a>
+          <a href="https://wa.me/2347087083857" class="btn btn-outline">Book on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>Braiding</h3>
+          <p>Neat, stylish, and long-lasting braids tailored to your look.</p>
+        </div>
+        <div class="service-card">
+          <h3>Wig Installation</h3>
+          <p>Flawless wig installations with a natural, premium finish.</p>
+        </div>
+        <div class="service-card">
+          <h3>Manicure</h3>
+          <p>Clean, polished nails with expert care and hygiene.</p>
+        </div>
+        <div class="service-card">
+          <h3>Pedicure</h3>
+          <p>Relaxing and refreshing foot care for total confidence.</p>
+        </div>
+        <div class="service-card">
+          <h3>Other Beauty Services</h3>
+          <p>All-round beauty solutions in a calm, welcoming space.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why">
+    <div class="container">
+      <h2>Why Choose Us</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <h3>Professional Stylists</h3>
+          <p>Experienced beauty experts who understand style and care.</p>
+        </div>
+        <div class="why-card">
+          <h3>Neat Finishing</h3>
+          <p>Attention to detail that leaves you confident and elegant.</p>
+        </div>
+        <div class="why-card">
+          <h3>Customer Satisfaction</h3>
+          <p>Your happiness is our priority — every single visit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <div class="container">
+      <h2>Our Work</h2>
+      <div class="gallery-grid">
+        <!-- Temporary placeholder images: braided hair & salon work -->
+        <img src="https://via.placeholder.com/300" alt="Salon Work" />
+        <img src="https://via.placeholder.com/300" alt="Braiding Style" />
+        <img src="https://via.placeholder.com/300" alt="Wig Installation" />
+        <img src="https://via.placeholder.com/300" alt="Manicure" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Visit or Contact Us</h2>
+      <div class="contact-box">
+        <div class="contact-details">
+          <p><strong>Connect With Us</strong></p>
+          <p>💬 <a href="https://wa.me/2347087083857">WhatsApp Booking</a></p>
+          <p>🎵 <a href="#" target="_blank">Follow us on TikTok</a></p>
+          <br/>
+          <p><strong>God’s Grace Beauty Salon</strong></p>
+          <p>📍 Akala Express Road, New Garage, Ibadan</p>
+          <p>📞 <a href="tel:07087083857">07087083857</a></p>
+          <p>💬 <a href="https://wa.me/2347087083857">Chat on WhatsApp</a></p>
+        </div>
+        <div class="map">
+          Google Map Location Placeholder
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      © 2026 God’s Grace Beauty Salon. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- Sticky CTA -->
+  <div class="sticky-cta">
+    <a href="tel:07087083857" class="btn btn-primary">Call</a>
+    <a href="https://wa.me/2347087083857" class="btn btn-outline">WhatsApp</a>
+  </div>
+
+</body>
+</html>
